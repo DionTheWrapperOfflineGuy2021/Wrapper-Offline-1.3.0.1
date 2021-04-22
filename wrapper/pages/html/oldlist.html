@@ -1,108 +1,919 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<link rel="icon" href="../../favicon.ico" type="image/png">
-	<title>Video List</title>
-	<meta name="description" content="Wrapper: Offline's Video List">
-	<link rel="stylesheet" type="text/css" href="../css/oldglobal.css">
-</head>
-<body>
+<!-- Made by Joseph The Animator and requested by MacPlayz_YT.-->
 
-<header>
-	<div>
-		<h1 style="margin:0"><img id="logo" src="../img/list_logo.png" alt="Wrapper: Offline"/></h1>
-		<div id="headbuttons">
-			<a class="button_small" onclick="document.getElementById('file').click()">UPLOAD A MOVIE</a>
-			<div id="char_dropdown" class="button_small">
-				<div>CREATE A CHARACTER</div>
-				<menu>
-					<h2>Comedy World</h2>
-					<a href="/cc?themeId=family&bs=adam">Guy (Adam)</a>
-					<a href="/cc?themeId=family&bs=eve">Girl (Eve)</a>
-					<a href="/cc?themeId=family&bs=bob">Fat (Bob)</a>
-					<a href="/cc?themeId=family&bs=rocky">Buff (Rocky)</a>
-					<hr>
-					<h2>Anime</h2>
-					<a href="/cc?themeId=anime&bs=guy">Guy</a>
-					<a href="/cc?themeId=anime&bs=girl">Girl</a>
-					<a href="/cc?themeId=ninjaanime&bs=guy">Guy (Ninja)</a>
-					<a href="/cc?themeId=ninjaanime&bs=girl">Girl (Ninja)</a>
-					<hr>
-					<h2>Peepz</h2>
-					<a href="/cc?themeId=cc2&bs=default">Lil Peepz</a>
-					<a href="/cc?themeId=chibi&bs=default">Chibi Peepz</a>
-					<a href="/cc?themeId=ninja&bs=default">Chibi Ninjas</a>
-				</menu>
-			</div>
-			<a href="/go_full" class="button_big">MAKE A VIDEO</a>
-		</div>
-	</div>
-</header>
-<table>
-	<thead>
-		<tr>
-			<td></td>
-			<td>Video Title</td>
-			<td>Last Modified</td>
-			<td></td>
-		</tr>
-	</thead>
-	<tbody></tbody>
-	<tfoot>
-		<tr>
-			<td colspan="127"><a id="load_more" href="javascript:;">LOAD MORE...</a></td>
-		</tr>
-	</tfoot>
-</table>
-<footer>
-	<a id="discordlink" href="https://discord.gg/yhGAetN">Discord Server</a>
-</footer>
+<title>MacPlayz Online</title>
+<meta name="description" content="Wrapper offline for schools remastered made by redfireanimations and jaime">
+<meta property="og:type" content="website">
+<meta property="og:title" content="W:O for schools remastered" />
+<meta property="og:description" content="Wrapper offline for schools remastered made by redfireanimations and jaime" />
+<meta property="og:url" content="https://josephcrosmanplays532.github.io/" />
+<meta property="og:image:secure_url" content="https://josephcrosmanplays532.github.io/Wrapper-Offline-Assets/favicon.ico" /> 
+<meta name="theme-color" content="#FF0080">
+<html><meta property="og:type" content="article" content=" /go_full"><meta property="og:image" content="http://web.archive.org/web/20140218225908/http://embed.wistia.com/deliveries/e3f2aaca2e8b243a83bf5f6e049391fa7e10320c.bin"><meta property="og:video" content="http://web.archive.org/web/20140218225908/http://embed.wistia.com/flash/embed_player_v2.0.swf?2013-10-04?controlsVisibleOnLoad=false&amp;mediaDuration=207&amp;playButtonVisible=true&amp;referrer=http%3A%2F%2Fweb.archive.org%2Fweb%2F20140228083745%2Fhttp%3A%2F%2Fgoanimate.com%2Fvideomaker&amp;showAbout=true&amp;showVolume=false&amp;stillUrl=http%3A%2F%2Fweb.archive.org%2Fweb%2F20140218225908%2Fhttp%3A%2F%2Fembed.wistia.com%2Fdeliveries%2Fe3f2aaca2e8b243a83bf5f6e049391fa7e10320c.bin&amp;allowSwitchToHtml5=true&amp;trackingTransmitInterval=20&amp;unbufferedSeek=true&amp;videoUrl=http%3A%2F%2Fweb.archive.org%2Fweb%2F20140218225908%2Fhttp%3A%2F%2Fembed.wistia.com%2Fdeliveries%2F00a07fa93ba333cc10aa9d9726681453a918ac7e.bin&amp;wmode=opaque&amp;embedServiceURL=http%3A%2F%2Fweb.archive.org%2Fweb%2F20140218225908%2Fhttp%3A%2F%2Fdistillery.wistia.com%2Fx&amp;accountKey=wistia-production_14033&amp;mediaID=wistia-production_4277089"><meta property="og:video:type" content="application/x-shockwave-flash"><script src="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/quant.js.download" async="" type="text/javascript"></script><script type="text/javascript" async="" src="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/d6e9ca5d19bda4afea55a1493af00d0b98c26240.1.js.download"></script><script type="text/javascript" async="" src="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/i.js.download"></script><script type="text/javascript" async="" src="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/dc.js.download"></script><script type="text/javascript" class="__REQUESTLY__SCRIPT">(function(namespace) {
+  window[namespace] = window[namespace] || {};
+  window[namespace].responseRules = {};
 
-<form enctype='multipart/form-data' action='/upload_movie' method='post'>
-	<input id='file' type="file" onchange="this.form.submit()" name='import' />
-</form>
+  let open = XMLHttpRequest.prototype.open;
+  XMLHttpRequest.prototype.open = function(method) {
+    this.addEventListener('readystatechange', function() {
+      if (this.readyState === 4 && window[namespace].responseRules.hasOwnProperty(this.responseURL)) {
+        const responseRule = window[namespace].responseRules[this.responseURL];
+        const {response, id} = responseRule;
+        const responseType = this.responseType;
+        let customResponse;
 
-</body>
+        customResponse = response.type === 'code' ? responseRule.evaluator({
+            method,
+            url: this.responseURL,
+            requestHeaders: this.requestHeaders,
+            requestData: this.requestData,
+            responseType: this.responseType,
+            response: this.response
+          }) : response.value;
 
-<script>
-	const closeReq = new XMLHttpRequest();
-	closeReq.open('GET', '/events/close');
-	closeReq.send();
+        Object.defineProperty(this, 'response', {
+          get: function () {
+            if (response.type === 'static' && responseType === 'json') {
+              return JSON.parse(customResponse);
+            }
+            return customResponse;
+          }
+        });
 
-	var json;
-	var tbody = document.getElementsByTagName('tbody')[0];
-	var loadMore = document.getElementById('load_more');
-	const listReq = new XMLHttpRequest();
-	listReq.open('GET', '/movieList');
-	listReq.send();
+        if (responseType === '' || responseType === 'text') {
+          Object.defineProperty(this, 'responseText', {
+            get: function () {
+              return customResponse;
+            }
+          });
+        }
 
-	var C = 0;
-	function loadRows() {
-		let c = C; C += 69;
-		for (; c < C; c++) {
-			if (c > json.length - 1) {
-				loadMore.remove();
-				break;
+        window.postMessage({
+          from: 'requestly',
+          type: 'response_rule_applied',
+          id
+        }, window.location.href);
+      }
+    }, false);
+    open.apply(this, arguments);
+  };
+
+  let send = XMLHttpRequest.prototype.send;
+  XMLHttpRequest.prototype.send = function(data) {
+    this.requestData = data;
+    send.apply(this, arguments);
+  };
+
+  let setRequestHeader = XMLHttpRequest.prototype.setRequestHeader;
+  XMLHttpRequest.prototype.setRequestHeader = function(header, value) {
+    this.requestHeaders = this.requestHeaders || {};
+    this.requestHeaders[header] = value;
+    setRequestHeader.apply(this, arguments);
+  }
+})('__REQUESTLY__')</script><script>
+Object.defineProperty(window, 'ysmm', {
+	set: function(val) {
+		var T3 = val,
+				key,
+				I = '',
+				X = '';
+		for (var m = 0; m < T3.length; m++) {
+			if (m % 2 == 0) {
+				I += T3.charAt(m);
+			} else {
+				X = T3.charAt(m) + X;
 			}
+		}
+		T3 = I + X;
+		var U = T3.split('');
+		for (var m = 0; m < U.length; m++) {
+			if (!isNaN(U[m])) {
+				for (var R = m + 1; R < U.length; R++) {
+					if (!isNaN(U[R])) {
+						var S = U[m]^U[R];
+						if (S < 10) {
+							U[m] = S;
+						}
+						m = R;
+						R = U.length;
+					}
+				}
+			}
+		}
+		T3 = U.join('');
+		T3 = window.atob(T3);
+		T3 = T3.substring(T3.length - (T3.length - 16));
+		T3 = T3.substring(0, T3.length - 16);
+		key = T3;
+		if (key && (key.indexOf('http://') === 0 || key.indexOf("https://") === 0)) {
+			document.write('<!--');
+			window.stop();
 
-			const tbl = json[c];
-			const date = tbl.date.substr(0, 10) + ' ' + tbl.date.substr(11);
-			tbody.insertAdjacentHTML('beforeend',
-				'<tr><td><img src="/movie_thumbs/' + tbl.id + '"></td><td><div>' + tbl.title + '</div><div>' + tbl.durationString + '</div></div></td><td><span>' + date.match(/./g).join('</span><span>') + '</span></td><td><a href="javascript:;" onclick="popup(\'' + tbl.id + '\')"></a><a href="/go_full?movieId=' + tbl.id + '"></a><a href="/movies/' + tbl.id + '.xml" download="' + tbl.title + '"></a></td></tr>');
+			window.onbeforeunload = null;
+			window.location = key;
 		}
 	}
+});
+</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/analytics.js(1).download" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app40.us.archive.org';v.server_ms=293;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/playback.bundle.js.download" charset="utf-8"></script>
+<script type="text/javascript" src="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/wombat.js.download" charset="utf-8"></script>
 
-	loadMore.onclick = loadRows;
-	listReq.onreadystatechange = function (e) {
-		if (listReq.readyState != 4) return;
-		json = JSON.parse(listReq.responseText);
-		loadRows();
-	}
 
-	function popup(id) {
-		window.open('/player?movieId=' + id, 'MsgWindow', 'width=1280,height=720,left=' + (screen.width / 2 - 640) + ',top=' + (screen.height / 2 - 360));
-	}
+</script>
+<link rel="stylesheet" type="text/css" href="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/banner-styles.css">
+<link rel="stylesheet" type="text/css" href="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/iconochive.css">
+<!-- End Wayback Rewrite JS Include -->
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="dns-prefetch" href=" http://lightspeed.goanimate.com/">
+
+<title>make a new video with this very fresh video maker!</title>
+
+<meta name="description" content="Make a premium video using Wrapper Online\&#39;s powerful Video Maker studio.  Enjoy full creative control with simple drag &amp; drop tools.  Click, Drag, Action!">
+<meta property="og:site_name" content="GoAnimate">
+<meta property="fb:app_id" content="177116303202">
+
+<meta name="google-site-verification" content="K_niiTfCVi72gwvxK00O4NjsVybMutMUnc-ZnN6HUuA">
+
+<link rel="alternate" href="https://discord.gg/2CCt2bE" type="application/rss+xml" title="GoAnimate Blog">
+<link rel="alternate" href="https://discord.gg/2CCt2bE" type="application/rss+xml" title="GoAnimate - Recently Released Content">
+<link rel="alternate" href="https://discord.gg/2CCt2bE" type="application/rss+xml" title="GoAnimate - Most Watched">
+
+
+<link href="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/css" rel="stylesheet" type="text/css">
+<link href="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/bootstrap-modal.css" rel="stylesheet" type="text/css">
+<link href="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/bootstrapSwitch.css" rel="stylesheet" type="text/css">
+<link href="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/style.css" rel="stylesheet" type="text/css">
+<link href="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/site.css" rel="stylesheet" type="text/css">
+<link href="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/overlay.css" rel="stylesheet" type="text/css">
+
+<link href="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/upsell_modals.css" rel="stylesheet" type="text/css">
+<link href="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/videomaker.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript">
+var srv_tz_os = -5, view_name = "go", user_cookie_name = "u_info";
 </script>
 
-</html>
+<script src="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/jquery-1.8.3.min.js.download"></script>
+
+<script src="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/bootstrap.min.js.download"></script>
+<script src="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/bootstrap-modalmanager.js.download"></script>
+<script src="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/bootstrap-modal.js.download"></script>
+<script src="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/bootstrapSwitch.js.download"></script>
+
+
+<script src="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/go2.js.download"></script>
+<script src="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/jquery.swfobject.min.js.download"></script>
+<script src="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/jquery.blockUI.js.download"></script>
+<script src="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/jquery.scrollTo.min.js.download"></script>
+<script src="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/app.js.download"></script>
+
+<script src="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/cookie.js.download"></script>
+<script src="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/Gettext.js.download"></script>
+<script type="text/javascript" src="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/goserver_js-en_US.json"></script>
+<script type="text/javascript">
+var I18N_LANG = 'en_US';
+var GT = new Gettext({'locale_data': json_locale_data});
+</script>
+<script src="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/jquery.flexslider.min.js.download"></script>
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-2516970-1']);
+_gaq.push(['_setDomainName', 'none']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+
+ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+<!-- GoAnimate_Footer_ROS_Bottom_960x284 -->
+<script type="text/javascript" src="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/google_service.js.download">
+</script>
+<script type="text/javascript">
+GS_googleAddAdSenseService("ca-pub-9090384317741239");
+GS_googleEnableAllServices();
+</script><script src="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/google_ads.js.download"></script>
+<script type="text/javascript">
+GA_googleAddAttr("is_login", "no");
+GA_googleAddAttr("is_plus", "no");
+GA_googleAddAttr("is_creator", "no");
+</script>
+<script type="text/javascript">
+GA_googleAddSlot("ca-pub-9090384317741239", "GoAnimate_Footer_ROS_Bottom_960x284");
+</script>
+<script type="text/javascript">
+GA_googleFetchAds();
+</script>
+<!-- GoAnimate_Footer_ROS_Bottom_960x284 -->
+
+<link href="https://plus.google.com/+goanimate" rel="publisher">
+
+<style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}
+.fb_invisible{display:none}
+.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}
+.fb_reset > div{overflow:hidden}
+.fb_link img{border:none}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}
+.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}
+.fb_dialog_content{background:#fff;color:#333}
+.fb_dialog_close_icon{background:url(http://web.archive.org/web/20140228083745if_/http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(http://web.archive.org/web/20140228083745if_/http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px;top:8px\9;right:7px\9}
+.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}
+.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}
+.fb_dialog_close_icon:hover{background:url(http://web.archive.org/web/20140228083745if_/http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(http://web.archive.org/web/20140228083745if_/http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}
+.fb_dialog_close_icon:active{background:url(http://web.archive.org/web/20140228083745if_/http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(http://web.archive.org/web/20140228083745if_/http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}
+.fb_dialog_loader{background-color:#f2f2f2;border:1px solid #606060;font-size:24px;padding:20px}
+.fb_dialog_top_left,
+.fb_dialog_top_right,
+.fb_dialog_bottom_left,
+.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}
+.fb_dialog_top_left{background:url(http://web.archive.org/web/20140228083745if_/http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}
+.fb_dialog_top_right{background:url(http://web.archive.org/web/20140228083745if_/http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}
+.fb_dialog_bottom_left{background:url(http://web.archive.org/web/20140228083745if_/http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}
+.fb_dialog_bottom_right{background:url(http://web.archive.org/web/20140228083745if_/http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}
+.fb_dialog_vert_left,
+.fb_dialog_vert_right,
+.fb_dialog_horiz_top,
+.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}
+.fb_dialog_vert_left,
+.fb_dialog_vert_right{width:10px;height:100%}
+.fb_dialog_vert_left{margin-left:-10px}
+.fb_dialog_vert_right{right:0;margin-right:-10px}
+.fb_dialog_horiz_top,
+.fb_dialog_horiz_bottom{width:100%;height:10px}
+.fb_dialog_horiz_top{margin-top:-10px}
+.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}
+.fb_dialog_iframe{line-height:0}
+.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #3b5998;color:#fff;font-size:14px;font-weight:bold;margin:0}
+.fb_dialog_content .dialog_title > span{background:url(http://web.archive.org/web/20140228083745if_/http://static.ak.fbcdn.net/rsrc.php/v2/yd/r/Cou7n-nqK52.gif)
+no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}
+body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}
+.fb_dialog.fb_dialog_mobile.loading{background:url(http://web.archive.org/web/20140228083745if_/http://static.ak.fbcdn.net/rsrc.php/v2/ya/r/3rhSv5V8j3o.gif)
+white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}
+.fb_dialog.fb_dialog_mobile.loading.centered{max-height:590px;min-height:590px;max-width:500px;min-width:500px}
+#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;left:0;top:0;width:100%;min-height:100%;z-index:10000}
+#fb-root #fb_dialog_ipad_overlay.hidden{display:none}
+.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}
+.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}
+.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%
+}
+.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px
+}
+.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px
+}
+.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6),
+color-stop(0.5, #355492), to(#2A4887));border:1px solid #29447e;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset,
+rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}
+.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}
+.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}
+.fb_dialog_content .dialog_content{background:url(http://web.archive.org/web/20140228083745if_/http://static.ak.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}
+.fb_dialog_content .dialog_footer{background:#f2f2f2;border:1px solid #555;border-top-color:#ccc;height:40px}
+#fb_dialog_loader_close{float:left}
+.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}
+.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}
+.fb_iframe_widget{display:inline-block;position:relative}
+.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}
+.fb_iframe_widget iframe{position:absolute}
+.fb_iframe_widget_lift{z-index:1}
+.fb_hide_iframes iframe{position:relative;left:-10000px}
+.fb_iframe_widget_loader{position:relative;display:inline-block}
+.fb_iframe_widget_fluid{display:inline}
+.fb_iframe_widget_fluid span{width:100%}
+.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}
+.fb_iframe_widget_loader .FB_Loader{background:url(http://web.archive.org/web/20140228083745if_/http://static.ak.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}
+.fb_connect_bar_container div,
+.fb_connect_bar_container span,
+.fb_connect_bar_container a,
+.fb_connect_bar_container img,
+.fb_connect_bar_container strong{background:none;border-spacing:0;border:0;direction:ltr;font-style:normal;font-variant:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal;vertical-align:baseline}
+.fb_connect_bar_container{position:fixed;left:0 !important;right:0 !important;height:42px !important;padding:0 25px !important;margin:0 !important;vertical-align:middle !important;border-bottom:1px solid #333 !important;background:#3b5998 !important;z-index:99999999 !important;overflow:hidden !important}
+.fb_connect_bar_container_ie6{position:absolute;top:expression(document.compatMode=="CSS1Compat"? document.documentElement.scrollTop+"px":body.scrollTop+"px")}
+.fb_connect_bar{position:relative;margin:auto;height:100%;width:100%;padding:6px 0 0 0 !important;background:none;color:#fff !important;font-family:"lucida grande", tahoma, verdana, arial, sans-serif !important;font-size:13px !important;font-style:normal !important;font-variant:normal !important;font-weight:normal !important;letter-spacing:normal !important;line-height:1 !important;text-decoration:none !important;text-indent:0 !important;text-shadow:none !important;text-transform:none !important;white-space:normal !important;word-spacing:normal !important}
+.fb_connect_bar a:hover{color:#fff}
+.fb_connect_bar .fb_profile img{height:30px;width:30px;vertical-align:middle;margin:0 6px 5px 0}
+.fb_connect_bar div a,
+.fb_connect_bar span,
+.fb_connect_bar span a{color:#bac6da;font-size:11px;text-decoration:none}
+.fb_connect_bar .fb_buttons{float:right;margin-top:7px}
+.fbpluginrecommendationsbarleft,
+.fbpluginrecommendationsbarright{position:fixed !important;bottom:0;z-index:999}
+.fbpluginrecommendationsbarleft{left:10px}
+.fbpluginrecommendationsbarright{right:10px}</style></head>
+<body class="en_US" data-gr-c-s-loaded="true"><!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  /*min-width:800px !important;*/
+}
+</style>
+
+</div><div id="donato" style="position:relative;width:100%;">
+  <div id="donato-base">
+    <iframe id="donato-if" src="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/donate.html" scrolling="no" frameborder="0" style="width:100%; height:100%">
+    </iframe>
+  </div>
+</div><script type="text/javascript">
+__wm.bt(625,27,25,2,"web"," /videomaker","20140228083745",1996,"/_static/",["/_static/css/banner-styles.css?v=HyR5oymJ","/_static/css/iconochive.css?v=qtvMKcIJ"]);
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+<div id="fb-root" class=" fb_reset"><script async="" src="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/all.js.download"></script><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" scrolling="no" id="fb_xdm_frame_http" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tab-index="-1" src="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/xd_arbiter.html" style="border: none;"></iframe><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tab-index="-1" src="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/xd_arbiter(1).html" style="border: none;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="f38184cf9bfce8e" frameborder="0" allowtransparency="true" scrolling="no" src="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/ping.html" style="display: none;"></iframe></div></div></div>
+<script type="text/javascript">
+  window.fbAsyncInit = function() {
+    FB.init({appId: '177116303202', cookie: true, status: true, xfbml: true});
+    jQuery(document).ready(function() {
+      jQuery(document).trigger('facebook.init');
+    });
+  };
+  (function() {
+    var e = document.createElement('script'); e.async = true;
+    e.src = document.location.protocol +
+      '//web.archive.org/web/20140228083745/http://connect.facebook.net/en_US/all.js';
+    document.getElementById('fb-root').appendChild(e);
+  }());
+</script>
+
+<script type="text/javascript">
+  var _kmq = _kmq || [];
+  var _kmk = _kmk || 'd6e9ca5d19bda4afea55a1493af00d0b98c26240';
+  function _kms(u){
+    setTimeout(function(){
+      var d = document, f = d.getElementsByTagName('script')[0],
+      s = d.createElement('script');
+      s.type = 'text/javascript'; s.async = true; s.src = u;
+      f.parentNode.insertBefore(s, f);
+    }, 1);
+  }
+  _kms('//web.archive.org/web/20140228083745/http://i.kissmetrics.com/i.js');
+  _kms('//web.archive.org/web/20140228083745/http://doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
+</script>
+
+<script type="text/javascript">
+		jQuery.extend(CCStandaloneBannerAdUI, {"actionshopSWF":"http:\/\/web.archive.org\/web\/20140228083745\/http:\/\/lightspeed.goanimate.com\/animation\/870\/actionshop.swf","apiserver":"http:\/\/web.archive.org\/web\/20140228083745\/http:\/\/goanimate.com\/","clientThemePath":"http:\/\/web.archive.org\/web\/20140228083745\/http:\/\/lightspeed.goanimate.com\/static\/466\/<client_theme>","userId":""});
+</script>
+
+<div class="page-container">
+
+<!-- HEADER -->
+<div class="site-header">
+	<div class="site-header-bg"></div>
+	<div class="container site-header-inside">
+		<a class="site-logo" href=" /pages/html/list.html" title="Wrapper Online">
+			<img alt="Make a Video Online with GoAnimate.com" src="/pages/img/list_logo.png">
+		</a>
+
+		<div class="pull-right">
+			<ul id="top-nav" class="top-nav">
+				<li>
+					<a href=" /pages/html/list.html" onclick="showSignup(); return false;"></a>
+				</li>
+				<li class="divider"></li>
+				<li>
+					<a href=" /pages/html/list.html" onclick="showLogin(); return false;">
+											</a>
+				</li>
+				<li class="divider"></li>
+				<li class="dropdown">
+					
+				</li>
+				<li class="divider"></li>
+
+				
+			<div class="top-nav-vm-btn">
+				
+				<a class="btn btn-orange pull-left" href="/pages/html/list.html">Video List</a>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+
+
+<!-- END OF HEADER -->
+
+<div class="vm-tutorial">
+	<div class="container">
+		<div class="tutorial-video" style="display:none;">
+
+<div id="wistia_9z4fah3lag" class="wistia_embed" style="width:860px;height:484px;"><div id="wistia_9z4fah3lag_grid_wrapper" style="height: 484px;"><div id="wistia_9z4fah3lag_grid_above"></div><div id="wistia_9z4fah3lag_grid_main" style="width: 860px;"><div id="wistia_9z4fah3lag_grid_behind"></div><div id="wistia_9z4fah3lag_grid_center"></div><div id="wistia_9z4fah3lag_grid_front"></div><div id="wistia_9z4fah3lag_grid_top_inside"><div id="wistia_9z4fah3lag_grid_top"></div></div><div id="wistia_9z4fah3lag_grid_bottom_inside"><div id="wistia_9z4fah3lag_grid_bottom"></div></div><div id="wistia_9z4fah3lag_grid_left_inside"><div id="wistia_9z4fah3lag_grid_left"></div></div><div id="wistia_9z4fah3lag_grid_right_inside"><div id="wistia_9z4fah3lag_grid_right"></div></div></div><div id="wistia_9z4fah3lag_grid_below"></div><style id="wistia_4_style" type="text/css" class="wistia_injected_style">#wistia_9z4fah3lag,#wistia_9z4fah3lag *{-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}
+#wistia_9z4fah3lag_grid_wrapper{font-family:Arial,sans-serif;font-size:14px;height:100%;position:relative;text-align:left;width:100%;}
+#wistia_9z4fah3lag_grid_above{position:relative;}
+#wistia_9z4fah3lag_grid_main{display:block;height:100%;position:relative;}
+#wistia_9z4fah3lag_grid_behind{height:100%;left:0;position:absolute;top:0;width:100%;}
+#wistia_9z4fah3lag_grid_center{height:100%;position:relative;width:100%;}
+#wistia_9z4fah3lag_grid_front{display:none;height:100%;left:0;position:absolute;top:0;width:100%;}
+#wistia_9z4fah3lag_grid_top_inside{position:absolute;left:0;top:0;width:100%;}
+#wistia_9z4fah3lag_grid_top{width:100%;position:absolute;bottom:0;left:0;}
+#wistia_9z4fah3lag_grid_bottom_inside{position:absolute;left:0;bottom:0;width:100%;}
+#wistia_9z4fah3lag_grid_bottom{width:100%;position:absolute;top:0;left:0;}
+#wistia_9z4fah3lag_grid_left_inside{height:100%;position:absolute;left:0;top:0;}
+#wistia_9z4fah3lag_grid_left{height:100%;position:absolute;right:0;top:0;}
+#wistia_9z4fah3lag_grid_right_inside{height:100%;right:0;position:absolute;top:0;}
+#wistia_9z4fah3lag_grid_right{height:100%;left:0;position:absolute;top:0;}
+#wistia_9z4fah3lag_grid_below{position:relative;}</style></div></div>
+<script charset="ISO-8859-1" src="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/E-v1.js.download"></script>
+<script>
+wistiaEmbed = Wistia.embed("9z4fah3lag");
+</script>
+<script charset="ISO-8859-1" src="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/metadata.js.download"></script>
+
+		
+		
+			
+				
+			
+		</div>
+	</div>
+</div>
+
+<div class="vm-bf-wrapper">
+<div class="vm-bf" id="topbanner-bf">
+	<div class="container">
+		<h1>Create animated videos easily and faster with the new videomaker!</h1>
+		<p class="subtitle"><strong></strong></p>
+
+		<div class="vm-bf-content">
+			<p> Made by RedFireAnimations and jaime for creating easy videos with the new fresh lvm! W:O for schools remastered 1.0</p>
+
+			<div class="actions">
+				
+				
+				</button>
+				
+			</div>
+		</div>
+	</div>
+</div>
+<div class="vm-bf whiteboard" id="topbanner-wb" style="display:none;">
+	<div class="container">
+		<h1>Create Animated Videos for Your awesome youtube channel on wrapper offline for schools remastered!</h1>
+		<p class="subtitle"><strong>plus: if you make a video on wrapper offline and wrapper offlinefor schools you make a video on wrapper offline for schools remastered!</strong></p>
+
+		<div class="vm-bf-content">
+			<p>lol.</p>
+
+			<div class="actions">
+				<button class="btn-flat btn-flat-orange btn-flat-banner" type="button" data-action="biz-preview" data-theme="nothing" data-app-type="Video Maker" data-button-text="Preview Video Maker" data-callback="showSignup(0, &#39;/go_full&#39;);" title="" data-original-title=" Video Maker">
+					Make a Video <small>Sign up to try (you don't need to sign up  just because signup sucks LOL)</small>
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="vm-bf-dots-wrapper">
+	<ul class="vm-bf-dots">
+		<li class="dot bf on"><a href=" /pages/html/list.html"></a></li>
+		<li class="dot wb"><a href=" /pages/html/list.html"></a></li>
+	</ul>
+</div>
+</div>
+
+<script>
+$('.vm-bf-dots a').click(function(e) {
+	e.preventDefault();
+	var $li = $(this).parent();
+	if ($li.hasClass('on')) return;
+	$li.addClass('on').siblings().removeClass('on');
+	$li.parent('.vm-bf-dots').toggleClass('wb', $li.hasClass('wb'));
+	if ($li.hasClass('wb')) {
+		$('#topbanner-bf').fadeOut();
+		$('#topbanner-wb').fadeIn();
+	} else {
+		$('#topbanner-wb').fadeOut();
+		$('#topbanner-bf').fadeIn();
+	}
+});
+</script>
+
+<div class="container themes-section">
+	<div class="header">
+		<div class="header-content">
+			<h2>Select A Theme</h2>
+			Select a theme based on its visual style, or use the filter to choose based on features (please who can find blood on dance floor image?).		</div>
+		<div class="filter-dropdown-container">
+			<div class="filter-dropdown dropdown">
+				<a class="filter-dropdown-toggle" data-toggle="dropdown" href=" /pages/html/list.html">Filter Themes <span class="caret"></span></a>
+				<ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dLabel">
+					<li>
+						<a class="filter-item" href=" /pages/html/list.html" data-filter="lipsync">
+							<div class="filter-icon"><img src="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/filter_lip.png" alt=""></div>
+							<div class="filter-body">
+								<div class="filter-name"><strong>Lip-sync</strong></div>
+								<span class="filter-desc">Characters automatically lip-sync their dialog when lines are assigned to them (but no the old themes maked on 2007-2008-2009).</span>
+							</div>
+							<div class="filter-checkbox-container">
+								<span class="filter-checkbox"></span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a class="filter-item" href=" /pages/html/list.html" data-filter="ext_lib">
+							<div class="filter-icon"><img src="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/filter_library.png" alt=""></div>
+							<div class="filter-body">
+								<div class="filter-name"><strong>Extensive Library</strong></div>
+								<span class="filter-desc">Collections of characters, backgrounds and props corresponding to a wide variety of locations, occupations and industries. (it's not professional but it's for fun and for schools...)</span>
+							</div>
+							<div class="filter-checkbox-container">
+								<span class="filter-checkbox"></span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a class="filter-item" href=" /pages/html/list.html" data-filter="starters">
+							<div class="filter-icon"><img src="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/filter_starter.png" alt=""></div>
+							<div class="filter-body">
+								<div class="filter-name"><strong>Scene Starters</strong></div>
+								<span class="filter-desc">dont work sadly</span>
+							</div>
+							<div class="filter-checkbox-container">
+								<span class="filter-checkbox"></span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a class="filter-item" href=" /pages/html/list.html" data-filter="qvm">
+							<div class="filter-icon"><img src="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/filter_template.png" alt=""></div>
+							<div class="filter-body">
+								<div class="filter-name"><strong>Template</strong></div>
+								<span class="filter-desc">doesnt even exist!</span>
+							</div>
+							<div class="filter-checkbox-container">
+								<span class="filter-checkbox"></span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a class="filter-item" href=" /pages/html/list.html" data-filter="char_creator">
+							<div class="filter-icon"><img src="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/filter_cc.png" alt=""></div>
+							<div class="filter-body">
+								<div class="filter-name"><strong>Character Creator</strong></div>
+								<span class="filter-desc">Customize your characters!  Adapt existing characters to meet your needs or build completely from scratch.</span>
+							</div>
+							<div class="filter-checkbox-container">
+								<span class="filter-checkbox"></span>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="filter-results" id="filter-results" style="display:none">
+		<b class="filter-count">0</b> matching themes based on filters:
+		<ul class="filter-crumb-list"></ul>
+		<a class="filter-crumb-list-clear" href=" /pages/html/list.html">Clear all</a>
+	</div>
+
+	<div class="themes clearfix" id="themes">
+
+		<div class="theme" id="thm-business" data-tags="char_creator lipsync starters ext_lib qvm">
+			<div class="theme-cell preview">
+				<div class="theme-cover launch">
+					<img src="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/Business_Friendly.jpg" alt="Business Friendly [suggested]">
+				</div>
+				<div class="theme-meat">
+					<h3>Business Friendly</h3>
+					<a class="btn btn-orange pull-left" href=" /go_full?tray=business">Make a Video</a>
+							<a class="btn btn-icon" href=" /pages/html/char.html">Character Creator</a>
+				</div>
+			</div>
+			
+		</div>
+
+		<div class="theme" id="thm-sf" data-tags="lipsync">
+			<div class="theme-cell preview">
+				<div class="theme-cover launch">
+					<img src="data:image/jpeg;base64,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" alt="Street Fighter">
+				</div>
+				<div class="theme-meat">
+					<h3>Street Fighter</h3>
+					<div class="apps">
+						<a class="btn btn-orange pull-left" href=" /go_full?tray=sf">Make a Video</a>
+							<a class="btn btn-icon" href=" /pages/html/char.html">Character Creator</a>
+					</div>
+					<div class="preview-notice">
+						<a target="_blsdfasdank"></a>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+
+		<div class="theme" id="thm-botdf" data-tags="">
+			<div class="theme-cell">
+				<div class="theme-cover launch">
+					<img src="https://raw.githubusercontent.com/2Epik4u/old-goanimate-files/master/Blood_On_The_Dance_Floor_Remastered.jpg" alt="Blood on the dance floor [Unused]">
+				</div>
+				<div class="theme-meat">
+					<h3>Blood on the dance floor [Unused]</h3>
+					<div class="apps">
+						<a class="btn btn-orange pull-left" href=" /go_full?tray=botdf">Make a Video</a>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+
+		<div class="theme" id="thm-custom" data-tags="lipsync qvm char_creator">
+			<div class="theme-cell">
+				<div class="theme-cover launch">
+					<img src="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/Comedy_World.jpg" alt="Comedy World [suggested]">
+				</div>
+				<div class="theme-meat">
+					<h3>Comedy World</h3>
+					<div class="apps">
+						<a class="btn btn-orange pull-left" href=" /go_full?tray=custom">Make a Video</a>
+							<a class="btn btn-icon" href=" /pages/html/char.html">Character Creator</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="theme" id="thm-action" data-tags="lipsync qvm char_creator">
+			<div class="theme-cell">
+				<div class="theme-cover launch">
+					<img src="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/lil_Peepz.jpg" alt="Lil&#39; Peepz [suggested]">
+				</div>
+				<div class="theme-meat">
+					<h3>Lil' Peepz</h3>
+					<div class="apps">
+						<a class="btn btn-orange pull-left" href=" /go_full?tray=action">Make a Video</a>
+							<a class="btn btn-icon" href=" /pages/html/char.html">Character Creator</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="theme" id="thm-politics2" data-tags="lipsync qvm">
+			<div class="theme-cell">
+				<div class="theme-cover launch">
+					<img src="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/Election_2012.jpg" alt="White Houserz">
+				</div>
+				<div class="theme-meat">
+					<h3>White Houserz</h3>
+					<div class="apps">
+						<a class="btn btn-orange pull-left" href=" /go_full?tray=politics2">Make a Video</a>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="theme" id="thm-sticklybiz" data-tags="">
+			<div class="theme-cell preview">
+				<div class="theme-cover launch">
+					<img src="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/Stickly_Business.jpg" alt="Stickly Business">
+				</div>
+				<div class="theme-meat">
+					<h3>Stickly Business</h3>
+					<div class="apps">
+						<a class="btn btn-orange pull-left" href=" /go_full?tray=sticklybiz">Make a Video</a>
+						
+					</div>
+					<div class="preview-notice">
+						<a href="" target="_blank"></a>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+
+		<div class="theme" id="thm-retro" data-tags="">
+			<div class="theme-cell">
+				<div class="theme-cover launch">
+					<img src="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files//Cartoon_Classics.jpg" alt="Cartoon Classics">
+				</div>
+				<div class="theme-meat">
+					<h3>Cartoon Classics</h3>
+					<div class="apps">
+						<a class="btn btn-orange pull-left" href=" /go_full?tray=retro">Make a Video</a>
+					
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="theme" id="thm-bizmodels" data-tags="">
+			<div class="theme-cell preview">
+				<div class="theme-cover launch">
+					<img src="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files//Business_Models.jpg" alt="Business Models">
+				</div>
+				<div class="theme-meat">
+					<h3>Business Models</h3>
+					<div class="apps">
+						<a class="btn btn-orange pull-left" href=" /go_full?tray=bizmodels">Make a Video</a>
+							
+					</div>
+					<div class="preview-notice">
+						<a href="" target="_blank">lmao</a>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+
+		<div class="theme" id="thm-anime" data-tags="char_creator lipsync qvm">
+			<div class="theme-cell">
+				<div class="theme-cover launch">
+					<img src="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/Anime.jpg" alt="Anime">
+				</div>
+				<div class="theme-meat">
+					<h3>Anime</h3>
+					<div class="apps">
+						<a class="btn btn-orange pull-left" href=" /go_full?tray=anime">Make a Video</a>
+							<a class="btn btn-icon" href=" /pages/html/char.html">Character Creator</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="theme" id="thm-ninjaanime" data-tags="char_creator lipsync">
+			<div class="theme-cell">
+				<div class="theme-cover launch">
+					<img src="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/Ninja_Anime.jpg" alt="Ninja Anime">
+				</div>
+				<div class="theme-meat">
+					<h3>Ninja Anime</h3>
+					<div class="apps">
+						<a class="btn btn-orange pull-left" href=" /go_full?tray=ninjaanime">Make a Video</a>
+							<a class="btn btn-icon" href=" /pages/html/char.html">Character Creator</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="theme" id="thm-spacecitizen" data-tags="lipsync">
+			<div class="theme-cell">
+				<div class="theme-cover launch">
+					<img src="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/Space_Citizens.jpg" alt="Space Citizens">
+				</div>
+				<div class="theme-meat">
+					<h3>Space Citizens</h3>
+					<div class="apps">
+						<a class="btn btn-orange pull-left" href=" /go_full?tray=spacecitizen">Make a Video</a>
+							<a class="btn btn-icon" href=" /pages/html/char.html">Character Creator</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="theme" id="thm-chibi" data-tags="lipsync qvm char_creator">
+			<div class="theme-cell">
+				<div class="theme-cover launch">
+					<img src="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/Chibi_Peepz.jpg" alt="Chibi Peepz">
+				</div>
+				<div class="theme-meat">
+					<h3>Chibi Peepz</h3>
+					<div class="apps">
+						<a class="btn btn-orange pull-left" href=" /go_full?tray=chibi">Make a Video</a>
+							<a class="btn btn-icon" href=" /pages/html/char.html">Character Creator</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="theme" id="thm-ninja" data-tags="lipsync qvm char_creator">
+			<div class="theme-cell">
+				<div class="theme-cover launch">
+					<img src="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/Chibi_Ninjas.jpg" alt="Chibi Ninjas">
+				</div>
+				<div class="theme-meat">
+					<h3>Chibi Ninjas</h3>
+					<div class="apps">
+						<a class="btn btn-orange pull-left" href=" /go_full?tray=ninja">Make a Video</a>
+							<a class="btn btn-icon" href=" /pages/html/char.html">Character Creator</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="theme" id="thm-space" data-tags="lipsync qvm">
+			<div class="theme-cell">
+				<div class="theme-cover launch">
+					<img src="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/Space_Peepz.jpg" alt="Space Peepz">
+				</div>
+				<div class="theme-meat">
+					<h3>Space Peepz</h3>
+					<div class="apps">
+						<a class="btn btn-orange pull-left" href=" /go_full?tray=space">Make a Video</a>
+							<a class="btn btn-icon" href=" /pages/html/char.html">Character Creator</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="theme" id="thm-stick" data-tags="">
+			<div class="theme-cell">
+				<div class="theme-cover launch">
+					<img src="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/Stick_Figure.jpg" alt="Stick Figure">
+				</div>
+				<div class="theme-meat">
+					<h3>Stick Figure</h3>
+					<div class="apps">
+						<a class="btn btn-orange pull-left" href=" /go_full?tray=stick">Make a Video</a>
+							<a class="btn btn-icon" href=" /pages/html/char.html">Character Creator</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="theme" id="thm-animal" data-tags="lipsync qvm">
+			<div class="theme-cell">
+				<div class="theme-cover launch">
+					<img src="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/Lil_Petz_World.jpg" alt="Lil&#39; Petz World">
+				</div>
+				<div class="theme-meat">
+					<h3>Lil' Petz World</h3>
+					<div class="apps">
+						<a class="btn btn-orange pull-left" href=" /go_full?tray=animal">Make a Video</a>
+							<a class="btn btn-icon" href=" /pages/html/char.html">Character Creator</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+
+<script>
+$(function() {
+	$('.vm-tutorial-trigger').click(function(e) {
+		e.preventDefault();
+
+		var $tutorial = $('.vm-tutorial');
+
+		if ($tutorial.hasClass('expand')) {
+			$('.tutorial-video').hide();
+			wistiaEmbed && wistiaEmbed.pause();
+		} else {
+			setTimeout(function() {
+				$('.tutorial-video').show();
+				wistiaEmbed && wistiaEmbed.play();
+			}, 400);
+		}
+
+		$tutorial.toggleClass('expand');
+	});
+
+	$('.theme-cell').each(function() {
+		var $button = $('.apps > .btn:first-child', this);
+		var launch, url;
+
+		$('.theme-cover', this).click(function(e) {
+			e.preventDefault();
+
+			if ($button.attr('href') != undefined) {
+				window.location.href = $button.attr('href');
+			} else {
+				$button.trigger('click');
+			}
+		}).addClass('launch');
+	});
+
+	$('.vm-bf-content .btn-flat, .themes .apps > .btn').tooltip();
+});
+
+var tagNames = {"lipsync":"Lip-sync","ext_lib":"Extensive Library","starters":"Scene Starters","qvm":"Template","char_creator":"Character Creator"};
+</script>
+<script src="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/video_maker.js.download"></script>
+
+<div id="biz-preview-overlay" class="modal hide">
+	<div class="modal-header">
+		<button class="close" type="button" data-dismiss="modal" aria-hidden="true">×</button>
+		<h3 class="modal-title">Preview the <span class="theme-name"></span> <span class="app-type"></span></h3>
+	</div>
+
+	<div class="modal-body text-center">
+		<div>
+			<br>
+			<img src="https://sageawesomegoanipicscope9865.github.io/old-goanimate-files/img_previewnsave.png">
+			<br><br>
+		</div>
+
+		<p>The <span class="theme-name"></span> <span class="app-type"></span> is available to <em>business subscribers only</em>.</p>
+
+		<p>Preview it for free, then <a href="  /business/videoplans/?hook=preview.site">subscribe to a business plan</a><br> if you'd like to keep your video or character.</p>
+	</div>
+
+	<div class="modal-footer">
+		<button class="btn btn-orange btn-cta" data-dismiss="modal">Preview</button>
+
+		<a class="btn btn-upsell" href="  /business/videoplans?hook=preview.site">View Business Plans</a>
+	</div>
+</div>
+
+<div id="payment-license-overlay" class="modal hide"></div>
+
+
+<!-- FOOTER -->
