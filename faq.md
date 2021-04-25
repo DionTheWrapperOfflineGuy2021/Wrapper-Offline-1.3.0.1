@@ -1,18 +1,16 @@
 <!-- markdownlint-disable MD012 MD022 MD026 MD032 -->
-# Wrapper: Offline FAQ
-This file contains tons of useful information based on questions I get a lot about the project. This file's a little visually noisy, but feel free to CTRL+F and skim through the headers to find what you want.
+# Wrapper: Offline for schools remastered FAQ
+this page contains a lot of information about this lvm originally created by aryan and a lot of thanks to him and jaime. let's start with the first one
 
-## About Wrapper: Offline
+## About Wrapper: Offline for schools remastered and W:O for schools
 
 ### What is Wrapper: Offline?
-Wrapper: Offline (simply called "Offline" for the rest of this page) is a continuation of the original Wrapper project, which was taken down approximately on 2020-04-17. Unlike the original, Offline can not be taken down. Everything it needs to run is stored entirely on your computer. While its current use is for making content, the motive is to make a historical archive for the original Flash-based themes used with this editor.
-
+Wrapper: Offline for schools and wrapper offline for schools remastered is an lvm clone offline for take down wrapper offline and make a very good version! if you are not ok about this lvm then please accept this lvm. (note: if you think this lvm it's a ripoff of wrapper offline it's not ok?)
 ### Where can I get updates?
 #### Discord
-You can join the Discord server here to get updates as they come out: <https://discord.gg/b7YSRkg>
-If you don't want to use Discord, you could ask a friend who does to let you know when an update comes out, and they can send you the download link. Please do not email me asking for the latest version.
+if you want to see the updates go on our discord server: <https://discord.gg/zGsBAtpq5m>.
 #### GitHub
-Wrapper: Offline also has a GitHub repository! Get updates faster through here: <https://github.com/Wrapper-Offline/Wrapper-Offline-Public>
+Wrapper: Offline for schools remastered haves a repository and it's the only method you can download wrapper offline for schools remastered. check out: <https://github.com/LVM-red-clones/Wrapper-Offline-For-Schools-Remastered-1.0-official-version/>
 
 ### Will it work forever? Even after Flash is retired?
 It should, that's the goal. Perhaps in the future when we all run 6000-bit machines implanted into our brains it won't be compatible with that anymore, but I'm sure there'll always be a way to run it. There is also futureproofing for Flash's discontinuation, since Offline includes a Flash install and a version of ungoogled-chromium that supports Flash. By default, it starts from this, but you can change that in settings.bat. The included Chrome should not be used for browsing beyond using Flash content. You can also look into projects like [Lightspark](http://lightspark.github.io/) and [ruffle](https://ruffle.rs/) that are attempting to recreate Flash.
@@ -27,7 +25,7 @@ Well, it still uses the Node.js app the original Wrapper ran on. But, it also st
 Chromium is literally Chrome. It's the libre software base Google uses to build Chrome, and then they tack proprietary parts like auto-updates and Google integration in so it's more appealing and they have more control over your experience. Ungoogled-chromium is just a version of Chromium that has any Google integration that's left in Chromium removed for privacy.
 If you don't trust me, feel free to look through the code on GitHub: <https://github.com/Eloston/ungoogled-chromium>
 And these VirusTotal results for it: <https://www.virustotal.com/gui/file/bab1f622f9a966baffa07838c305e586715979db884cd7369df96bb08c092f8a/detection>
-And you can also see an independent report from this site that analyzes software for spyware traits: <https://spyware.neocities.org/articles/ungoogled_chromium.html>
+And you can also see an independent report from this site that analyzes software for spyware traits: <https://spyware.neocities.org/articles/ungoogled_chromium.html> (note: chromium it's not a virus, it's a virus when an application you download from random sites download a innocent chromium version but it's reveal a virus, don't worry! use ungoogled chromium, ungoogled chromium it's not a virus ok?
 
 
 
@@ -86,17 +84,18 @@ The cause of this is usually an error with http-server, the software Offline use
 
 ## A feature isn't here/working!
 
+
 ### File uploading isn't working!
 It hasn't been added yet. It's never worked in any version of Wrapper, to my knowledge. There's a workaround beyond just using a standard video editor to add things after, although it's kinda tedious compared to the original file uploading system. Credit to GoTube for finding this! Go to the folder `wrapper-offline\server\store\3a981f5cb2739137\common\` and choose whichever folder for which type of thing you want. Add the file. For example, you can add a jpg/png into the prop folder, or an mp3 into the sound folder. Next, go to `wrapper-offline\wrapper\_THEMES` and open common.xml. Find a line that starts with the type of object you want (for example, props start with `<prop`.), and copy-paste it into a new line. Now modify your copied line to fit your item. The only part you _have_ to change is the `id` to whatever the name of your file is, but you should also change `name` to whatever you want the prop to be called. You could also add things like guns by changing `holdable` to 1. You can investigate this file further to make more complex custom props too, such as ones with different states.
 
 ### Business Friendly and Whiteboard are missing!
-I go into this in more detail in the legalese section, but basically Vyond is still using them so I won't include them in Offline.
+so if you don't know bussines friendly and whiteboard theme are used by vyond so copyright arrives, i delete it due for copyright obviously.
 
 ### Watermarks aren't working!
 This is likely tied to file uploading not working. You're likely better off either placing them over your video as a prop, or using a video editor to place them on your video. My recommendations are Kdenlive and OpenShot, both of them are libre software you can use for free.
 
 ### Some TTS voices won't generate!
-Some of them will never generate if your message is too long, as the current limit gives too much room and can go over what the voice services allow. If you're generating a short message and some voices still don't work, it may be possible that you've been rate-limited or a service has gone down. If all voices are not working, please check your internet connection.
+Some of them will never generate if your message is too long, as the current limit gives too much room and can go over what the voice services allow. If you're generating a short message and some voices still don't work, it may be possible that you've been rate-limited or a service has gone down. If all voices are not working, please check your internet connection. (also if you use a voicery voice it's not work because voicery shutdown on hallowen of 2020 so the tts are disabled)
 
 ### Starters aren't working!
 I currently have no fix for this, you'll just have to either copy them directly from projects or recreate them.
@@ -141,3 +140,4 @@ Because they are NOT affiliated or endorsing this project in any form. Wrapper: 
 
 ### Wait, you're using Vyond's copyrighted material, that's illegal!
 We are using their copyrighted material, yes. I don't think there's any denying that. But I'm trying to avoid hurting Vyond. I already removed all the themes used in current Vyond (business friendly, whiteboard, etc) because I don't want to intrude on their user base, and I removed their branding as best as I could to separate this project from them and show that we aren't affiliated in any way. I've also added a disclaimer when starting Offline for the first time to make people fully aware of what they're going into. If people want a solid fast engine with professional themes, they'll go to Vyond, and I know there are people that genuinely use their service for business purposes. If people just want to make silly YouTube videos using themes they're nostalgic for, or want to see a historical archive of these old abandoned themes, they'll come here. The way I see it, the content in Offline has all been abandoned and mostly given a negative image  (grounded videos) that makes them avoided, and this is a way for us to preserve them for future people to learn about. By the time the copyright expires, nobody will care enough to preserve it. And I'm a strong believer that software should be preserved once it's been abandoned. If I download and play an old game that's no longer being sold officially, they've already stopped people from giving them money for it. I view this the exact same way. An obscure Garfield puzzle game from a decade ago only a few people remember deserves the same preservation as a famous game everyone played when it released. I've said it before, and I'll keep saying it for likely the rest of my life.
+## FAQ modified by redfireanimations. credit to narutofan420 for the original FAQ page.
