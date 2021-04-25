@@ -4,7 +4,7 @@ this page contains a lot of information about this lvm originally created by ary
 
 ## About Wrapper: Offline for schools remastered and W:O for schools
 
-### What is Wrapper: Offline?
+### What is Wrapper: Offline for schools remastered and wrapper offline for schools?
 Wrapper: Offline for schools and wrapper offline for schools remastered is an lvm clone offline for take down wrapper offline and make a very good version! if you are not ok about this lvm then please accept this lvm. (note: if you think this lvm it's a ripoff of wrapper offline it's not ok?)
 ### Where can I get updates?
 #### Discord
